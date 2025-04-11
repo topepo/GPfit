@@ -5,10 +5,20 @@
 \alias{plot.GP}
 \title{Plotting GP model fits}
 \usage{
-\method{plot}{GP}(x, M = 1, range = c(0, 1), resolution = 50,
-  colors = c("black", "blue", "red"), line_type = c(1, 2), pch = 20,
-  cex = 1, legends = FALSE, surf_check = FALSE, response = TRUE,
-  ...)
+\method{plot}{GP}(
+  x,
+  M = 1,
+  range = c(0, 1),
+  resolution = 50,
+  colors = c("black", "blue", "red"),
+  line_type = c(1, 2),
+  pch = 20,
+  cex = 1,
+  legends = FALSE,
+  surf_check = FALSE,
+  response = TRUE,
+  ...
+)
 }
 \arguments{
 \item{x}{a class \code{GP} object estimated by \code{GP_fit}}
@@ -44,7 +54,7 @@ plotting, the default of \code{FALSE} implies level/contour plotting}
 \item{response}{logical, switch between predicted response and error (MSE)
 plots, the default of \code{TRUE} displays the response surface}
 
-\item{\dots}{additional arguments from \code{\link{wireframe}} or
+\item{\dots}{additional arguments from [lattice::wireframe()] or
 \code{\link{levelplot}}}
 }
 \description{
@@ -53,16 +63,16 @@ simulators with 1 and 2 dimensional inputs (i.e. d = 1,2).
 }
 \section{Methods (by class)}{
 \itemize{
-\item \code{GP}: The \code{plot} method 
+\item \code{plot(GP)}: The \code{plot} method
 creates a \pkg{graphics} plot for 1-D fits and
 \pkg{lattice} plot for 2-D fits.
-}}
 
+}}
 \examples{
 
 ## 1D Example 1
 n <- 5
-d <- 1 
+d <- 1
 computer_simulator <- function(x){
     x <- 2 * x + 0.5
     y <- sin(10 * pi * x) / (2 * x) + (x - 1)^4
@@ -95,17 +105,17 @@ plot(GPmodel, resolution = 100, line_type = c(6,2), pch = 5)
 computer_simulator <- function(x) {
     x1 <- 4 * x[, 1] - 2
     x2 <- 4 * x[, 2] - 2
-    t1 <- 1 + (x1 + x2 + 1)^2 * (19 - 14 * x1 + 3 * x1^2 - 14 * x2 + 
+    t1 <- 1 + (x1 + x2 + 1)^2 * (19 - 14 * x1 + 3 * x1^2 - 14 * x2 +
         6 * x1 * x2 + 3 * x2^2)
-    t2 <- 30 + (2 * x1 - 3 * x2)^2 * (18 - 32 * x1 + 12 * x1^2 + 48 * x2 - 
+    t2 <- 30 + (2 * x1 - 3 * x2)^2 * (18 - 32 * x1 + 12 * x1^2 + 48 * x2 -
         36 * x1 * x2 + 27 * x2^2)
     y <- t1 * t2
     return(y)
 }
-n <- 30 
+n <- 30
 d <- 2
 set.seed(1)
-x <- lhs::maximinLHS(n, d) 
+x <- lhs::maximinLHS(n, d)
 y <- computer_simulator(x)
 GPmodel <- GP_fit(x, y)
 ## Basic level plot
@@ -127,7 +137,7 @@ Deterministic Computer Simulation Data, Technometrics, 53(4), 366 - 378.
 \code{\link{GP_fit}} for estimating the parameters of the GP model;
 \cr \code{\link{predict.GP}} for predicting the response and error surfaces;
 \cr \code{\link{par}} for additional plotting characters and line types for
-1 dimensional plots; \cr \code{\link{wireframe}} and \code{\link{levelplot}}
+1 dimensional plots; \cr [lattice::wireframe()] and [lattice::levelplot()]
 for additional plotting settings in 2 dimensions.
 }
 \author{

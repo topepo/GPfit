@@ -1,6 +1,6 @@
 Package: GPfit
 Title: Gaussian Processes Modeling
-Version: 1.0-8
+Version: 1.0-9
 Date: 2019-02-07
 Authors@R: c(
     person("Blake", "MacDoanld", role = "aut"),
@@ -17,7 +17,8 @@ Imports: lhs (>= 0.5), lattice (>= 0.18-8)
 Suggests: testthat
 License: GPL-2
 NeedsCompilation: no
-RoxygenNote: 6.1.1
+Encoding: UTF-8
+RoxygenNote: 7.3.2
 Packaged: 2019-02-07 22:56:43 UTC; ccampbell
 Repository: CRAN
 Date/Publication: 2019-02-08 09:13:26 UTC

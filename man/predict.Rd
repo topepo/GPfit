@@ -40,15 +40,18 @@ used in calculating \eqn{\hat{y}_{\delta_{lb},M}(x)} and
 }
 \section{Methods (by class)}{
 \itemize{
-\item \code{GP}: The \code{predict} method 
+\item \code{predict(GP)}: The \code{predict} method 
 returns a list of elements Y_hat (fitted values), 
 Y (dependent variable), MSE (residuals), and 
 completed_data (the matrix of independent variables, 
 Y_hat, and MSE).
 
-\item \code{GP}: The \code{fitted} method extracts the complete data.
 }}
+\section{Functions}{
+\itemize{
+\item \code{fitted(GP)}: The \code{fitted} method extracts the complete data.
 
+}}
 \examples{
 
 ## 1D Example

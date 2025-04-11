@@ -4,8 +4,13 @@
 \alias{sig_invb}
 \title{Internal tools}
 \usage{
-sig_invb(X, Y, beta, corr = list(type = "exponential", power = 1.95),
-  nug_thres = 20)
+sig_invb(
+  X,
+  Y,
+  beta,
+  corr = list(type = "exponential", power = 1.95),
+  nug_thres = 20
+)
 }
 \arguments{
 \item{X}{the (\emph{n} x \emph{d}) design matrix}
