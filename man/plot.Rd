@@ -55,7 +55,7 @@ plotting, the default of \code{FALSE} implies level/contour plotting}
 plots, the default of \code{TRUE} displays the response surface}
 
 \item{\dots}{additional arguments from [lattice::wireframe()] or
-\code{\link{levelplot}}}
+[lattice::levelplot()]}
 }
 \description{
 Plots the predicted response and mean squared error (MSE) surfaces for

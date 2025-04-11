@@ -1,21 +1,14 @@
-citHeader("To cite GPfit in publications use:")
-
-citEntry(entry = "Article",
+bibentry(bibtype = "Article",
   title        = "{GPfit}: An {R} Package for Fitting a Gaussian Process Model to Deterministic Simulator Outputs",
-  author       = personList(as.person("Blake MacDonald"),
-                   as.person("Pritam Ranjan"),
-                   as.person("Hugh Chipman")),
+  author       = c(
+    person("Blake", "MacDoanld"),
+    person("Pritam", "Ranjan"),
+    person("Hugh", "Chipman")),
   journal      = "Journal of Statistical Software",
   year         = "2015",
   volume       = "64",
   number       = "12",
-  pages        = "1--23",
-  url          = "https://www.jstatsoft.org/v64/i12/",
-
-  textVersion  =
-  paste("Blake MacDonald, Pritam Ranjan, Hugh Chipman (2015).",
-        "GPfit: An R Package for Fitting a Gaussian Process Model to Deterministic Simulator Outputs.",
-        "Journal of Statistical Software, 64(12), 1-23.",
-        "URL https://www.jstatsoft.org/v64/i12/.")
+  pages        = "1-23",
+  url          = "https://www.jstatsoft.org/v64/i12/"
 )
 

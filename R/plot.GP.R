@@ -28,7 +28,7 @@
 #' @param response logical, switch between predicted response and error (MSE)
 #' plots, the default of \code{TRUE} displays the response surface
 #' @param \dots additional arguments from [lattice::wireframe()] or
-#' \code{\link{levelplot}}
+#' [lattice::levelplot()]
 #' @author Blake MacDonald, Hugh Chipman, Pritam Ranjan
 #' @seealso \code{\link{GP_fit}} for estimating the parameters of the GP model;
 #' \cr \code{\link{predict.GP}} for predicting the response and error surfaces;

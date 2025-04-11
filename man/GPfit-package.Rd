@@ -24,7 +24,7 @@ main function for fitting the GP model is \code{\link{GP_fit}}.
 MacDonald, K.B., Ranjan, P. and Chipman, H. (2015). GPfit: An R
 Package for Fitting a Gaussian Process Model to Deterministic Simulator
 Outputs. Journal of Statistical Software, 64(12), 1-23.
-\url{https://www.jstatsoft.org/v64/i12/} \cr
+\url{http://www.jstatsoft.org/v64/i12/} \cr
 
 Ranjan, P., Haynes, R., and Karsten, R. (2011). A Computationally Stable
 Approach to Gaussian Process Interpolation of Deterministic Computer
