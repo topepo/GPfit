@@ -78,7 +78,7 @@ n = 10
 d = 2
 set.seed(2)
 library(lhs)
-x = maximinLHS(n,d) 
+x = maximinLHS(n,d)
 beta = rnorm(2)
 corr_matrix(x, beta,
     corr = list(type = "exponential", power = 2))
@@ -90,20 +90,20 @@ print(R)
 
 }
 \references{
-MacDonald, K.B., Ranjan, P. and Chipman, H. (2015). 
-GPfit: An R Package for Fitting a Gaussian Process Model to 
-Deterministic Simulator Outputs.  
+MacDonald, K.B., Ranjan, P. and Chipman, H. (2015).
+GPfit: An R Package for Fitting a Gaussian Process Model to
+Deterministic Simulator Outputs.
 Journal of Statistical Software, 64(12), 1-23.
-\url{http://www.jstatsoft.org/v64/i12/} \cr
+\url{https://www.jstatsoft.org/v64/i12/} \cr
 
-Ranjan, P., Haynes, R., and Karsten, R. (2011). 
+Ranjan, P., Haynes, R., and Karsten, R. (2011).
 A Computationally Stable
-Approach to Gaussian Process Interpolation of 
-Deterministic Computer Simulation Data, 
+Approach to Gaussian Process Interpolation of
+Deterministic Computer Simulation Data,
 Technometrics, 53(4), 366 - 378. \cr
 
-Santner, T.J., Williams, B., and Notz, W. (2003), 
-The design and analysis of computer experiments, 
+Santner, T.J., Williams, B., and Notz, W. (2003),
+The design and analysis of computer experiments,
 Springer Verlag, New York.
 }
 \author{

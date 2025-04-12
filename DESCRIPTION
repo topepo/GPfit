@@ -1,11 +1,10 @@
 Package: GPfit
 Title: Gaussian Processes Modeling
 Version: 1.0-9
-Date: 2019-02-07
 Authors@R: c(
     person("Blake", "MacDoanld", role = "aut"),
     person("Hugh", "Chipman", email = "hugh.chipman@acadiau.ca", role = c("aut", "cre")),
-    person("Chris", "Campbell", email = "ccampbell@mango-solutions.com", role = "ctb"),
+    person("Chris", "Campbell", eamail = "ccampbell@mango-solutions.com", role = "ctb"),
     person("Pritam", "Ranjan", role = "aut"))
 Author: Blake MacDoanld [aut],
   Hugh Chipman [aut, cre],
